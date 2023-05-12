@@ -9,7 +9,7 @@ import com.hoainong.model.Profile;
 
 @Controller
 public class Controller_bai2_profile {
-	@GetMapping("/hoainong")
+	@GetMapping("/profile")
     public String reqHelloWord(Model model) {
         Profile student = new Profile();
         student.setId("PS24487");
@@ -20,13 +20,13 @@ public class Controller_bai2_profile {
         model.addAttribute("st", student);
         return "view_bai2/profile";
     }
-    @GetMapping("/hoaixxx")
+    @GetMapping("/index")
     public String hello() {
-    	return "index";
+    	return "view_bai2/index";
     }
-    @GetMapping("/hehe")
+    @GetMapping("/video")
     public String hello1() {
-    	return "info";
+    	return "view_bai2/video";
     }
 }
 
